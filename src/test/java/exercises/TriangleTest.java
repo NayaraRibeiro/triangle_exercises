@@ -16,9 +16,15 @@ public class TriangleTest {
     }
 
     @Test
-    public void shouldReturnAAsteriks(){
+    public void shouldReturnAAsterik(){
 
         assertThat(triangle.oneAsterisk(), is("*"));
     }
 
+    @Test
+    public void shouldReturnALineOfAsteriks(){
+
+        assertThat(triangle.lineOfAsteriks(8), is("********"));
+
+    }
 }

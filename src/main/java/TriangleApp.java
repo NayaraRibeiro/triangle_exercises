@@ -6,6 +6,10 @@ public class TriangleApp {
         Triangle triangle = new Triangle();
 
         System.out.println(triangle.oneAsterisk());
+        System.out.println();
+        System.out.println();
+
+
 
     }
 }
