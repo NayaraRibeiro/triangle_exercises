@@ -29,4 +29,9 @@ public class TriangleTest {
     public void shouldReturnAVerticalLineOfAsteriks() {
         assertThat(triangle.verticalLineOfAsteriks(3), is("*\n*\n*"));
     }
+
+    @Test
+    public void shouldReturnATriangleAlignedRight(){
+        assertThat(triangle.rightTriangle(3), is("\n*\n**\n***"));
+    }
 }
