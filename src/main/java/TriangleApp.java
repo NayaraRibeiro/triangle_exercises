@@ -5,9 +5,11 @@ public class TriangleApp {
     public static void main(String Args[]){
         Triangle triangle = new Triangle();
 
-        System.out.println(triangle.oneAsterisk());
-        System.out.println();
-        System.out.println();
+        System.out.println("One asterisk:\n" + triangle.oneAsterisk() + "\n");
+        System.out.println( "Horizontal line of asterisks:\n" + triangle.horizontalLineOfAsteriks(8) + "\n");
+        System.out.println("Vertical line of asterisks:\n" + triangle.verticalLineOfAsteriks(3) + "\n");
+
+
 
 
 

@@ -11,20 +11,22 @@ public class TriangleTest {
     private Triangle triangle;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         triangle = new Triangle();
     }
 
     @Test
-    public void shouldReturnAAsterik(){
-
+    public void shouldReturnAAsterik() {
         assertThat(triangle.oneAsterisk(), is("*"));
     }
 
     @Test
-    public void shouldReturnALineOfAsteriks(){
+    public void shouldReturnAHorizontalLineOfAsteriks() {
+        assertThat(triangle.horizontalLineOfAsteriks(8), is("********"));
+    }
 
-        assertThat(triangle.lineOfAsteriks(8), is("********"));
-
+    @Test
+    public void shouldReturnAVerticalLineOfAsteriks() {
+        assertThat(triangle.verticalLineOfAsteriks(3), is("*\n*\n*"));
     }
 }
